@@ -90,6 +90,7 @@ class TodoListItem extends HTMLElement {
     if (!this.#elmChecked) throw Error('elmChecked is undefined');
     this.#elmChecked.checked = this.checked;
     this.#elmLabel.textContent = this.label;
+    this.#elmLabel.style.textDecoration = this.checked ? 'line-through' : 'none';
   }
 
   #dispatchToggle() {
