@@ -1,5 +1,5 @@
-import TodoListItem from '../atoms/TodoListItem'; // todo: seek better way
-import '../atoms/TodoListItem';
+import TodoListItem from '../molecules/TodoListItem'; // todo: seek better way
+import '../molecules/TodoListItem';
 
 export default class /*TodoList*/ extends HTMLElement { // not used class name so far
   static {
